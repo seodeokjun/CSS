@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>확대 축소</title>
+    <title>기울이기</title>
     <link rel="stylesheet" href="../Reset.css">
     <style>
         .box{float: left; width: 100px; height: 100px; margin: 10px; background: skyblue;}
-        .x2{transform: scale(2);margin-top: 10px; margin-left: 50px;}
-        .harf{transform: scale(0.5);}
+        .box1{transform: skew(50deg, 0deg);}
+        .box2{transform: skew(0deg, 50deg);}
+        .box3{transform: skew(50deg);}
     </style>
 </head>
 <body>
-    <div class="box">everdevel</div>
-    <div class="box x2">everdevel 2x</div>
-    <div class="box half">everdevel half</div>
+    <div class="box box1">everdevel</div>
+    <div class="box box2">everdevel</div>
+    <div class="box box3">everdevel</div>
 </body>
 </html>
