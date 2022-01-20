@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css애니메이션</title>
+    <link rel="stylesheet" href="../Reset.css">
+    <style>
+        .move{width: 100px; height: 80px; border-radius: 20px; background: skyblue; position: relative;
+        animation: move 3s infinite;}
+        @keyframes move {
+            from{left:0}
+            10%{width: 120px; height: 100px; left: 300px;}
+            30%{width: 150px; height: 130px; left: 500px;}
+            50%{width: 300px; height: 260px; left: 800px;}
+            70%{width: 150px; height: 130px; left: 500px;}
+            90%{width: 120px; height: 100px; left: 300px;}
+            to{left: 0px;}
+        }
+        .move p{float: left; width: 100%; text-align: center; margin: 30px 0 0 0; font-size: 20px; color: #fff;
+        font-weight: bold;}
+    </style>
+</head>
+<body>
+    <div class="move"><p>hello world</p></div>
+</body>
+</html>
