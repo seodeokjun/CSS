@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{padding: 0; margin: 0;}
+
+        header{width: 100%;}
+        header h1{text-align: center;}
+        section{width: 100%;}
+        section img{width: 80%; margin: 30px; auto;display: block;}
+        section p{text-align: center;}
+        footer{clear:both;width: 100%; margin-top: 20px; padding: 10px 0; border-top: 1px solid #000000; text-align: center;}
+
+        /* mobile */
+        @media screen and (min-width:0px) and (max-width:500px){
+            header button{position: absolute; left: 1rem; background: url(https://www.pinkcoding.com/material/ex/3line.png) no-repeat; width: 2.5rem; height: 2.5rem; border: none; transform: scale(0.5);}
+            section nav{display: none;}
+            footer{position: absolute; bottom: 0;}
+        }
+
+        /* pc */
+        @media screen and (min-width:501px){
+            header button{display: none;}
+            section nav{width: 100%;}
+            section nav ul{list-style: none; width: 100%; margin: 0 auto;}
+            section nav ul li{clear:both; text-align: center; margin-top: 20px;}
+            section nav ul li:last-of-type{margin-right: 0;}
+            section nav ul li a{text-decoration: none; color: #000000;}
+        }
+    </style>
+    <title>pinkcoding</title>
+</head>
+<body>
+    <header>
+        <button></button>
+        <h1>pinkcoding</h1>
+    </header>
+    <section>
+        <img src="https://www.pinkcoding.com/material/ex/mickey.jpg" alt="disney">
+        <p>coding etude site : pinkcoding</p>
+        <nav>
+            <ul>
+                <li><a href="/class/web/HTML">HTML</a></li>
+                <li><a href="/class/web/CSS">CSS</a></li>
+                <li><a href="/class/web/jQuery">jQuery</a></li>
+                <li><a href="/class/web/MySQL">MySQL</a></li>
+                <li><a href="/class/web/PHP">PHP</a></li>
+            </ul>
+        </nav>
+    </section>
+    <footer>
+        <p>pinkcoding</p>
+    </footer>
+</body>
+</html>
